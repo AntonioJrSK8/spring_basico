@@ -24,12 +24,12 @@ public class primeiroController {
     }
 
     // http://localhost:8080/subpath?name=Pedro
-    @GetMapping("/subpath")
+    @GetMapping("/subpath2")
     public String subPathQueryString(@RequestParam("name") String name) {
         return "Valor de uma Query String: " + name;
     }
 
-    @GetMapping("/subpath")
+    @GetMapping("/subpath3")
     public String subPathWebRequest(final WebRequest webRequest) {
         String name = webRequest.getParameter("namefull");
         return "Valor de uma Query String: " + name;
