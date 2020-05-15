@@ -25,7 +25,7 @@ public class primeiroController {
 
     // http://localhost:8080/subpath?name=Pedro
     @GetMapping("/subpath2")
-    public String subPathQueryString(@RequestParam(value = "name", required = true) String name) {
+    public String subPathQueryString(@RequestParam(value = "name", required = false) String name) {
         return "Valor de uma Query String: " + name;
     }
 
