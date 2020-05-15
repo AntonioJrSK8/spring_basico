@@ -37,7 +37,7 @@ public class primeiroController {
 
     @GetMapping("/{dynamic}")
     public String dynamico(@PathVariable("dynamic") String name) {
-        return "Nome do parametro " + name;
+        return "Nome do parametro: " + name;
     }
 
 
