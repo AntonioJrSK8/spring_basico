@@ -27,10 +27,17 @@ public class Car {
     @Column
     private String cor;
 
+    public Car(){
+
+    }
     public Car(String name, Integer ano, String cor) {
         this.name = name;
         this.ano = ano;
         this.cor = cor;
+    }
+    
+    public long getId() {
+        return this.id;
     }
     
     public String getName() {
